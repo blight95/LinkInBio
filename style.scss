@@ -13,19 +13,20 @@ body { display: block; place-items: center; margin: 0; font-family: Inter, Helve
             @media (min-width: 930px) { width: clamp(130px, 14vw, 12rem); }
         }
         .PageTitle { display: block; margin: 0; font-size: clamp(2rem, 6vw, 4rem); line-height: 1em; }
+        .PageSubtitle { display: block; margin: 0; font-size: clamp(1rem, 2vw, 2rem); font-weight: 100; line-height: 1em; }
         .MainDescription { display: block; margin: 0.5em 0 1.5em;
             @media (min-width: 500px) { margin-bottom: 0.5em; }
         }
-        main { clear: both; }
-            .LinksList { display: block; margin: 0; padding: 0; border-top: 1px solid #fff;
-                @media (min-width: 1200px) { display: grid; grid-template-columns: 1fr 1fr; }
+    main { clear: both; }
+        .LinksList { display: block; margin: 0; padding: 0; border-top: 1px solid #fff;
+            @media (min-width: 1200px) { display: grid; grid-template-columns: 1fr 1fr; }
+        }
+            .ItemList { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff;
             }
-                .ItemList { display: block; margin: 0; padding: 0; border-bottom: 1px solid #fff;
+                .LinkList { display: block; padding: 0.5em; color: #fff; text-decoration: none;
+                    &:hover { background: white; color: black; }
                 }
-                    .LinkList { display: block; padding: 0.5em; color: #fff; text-decoration: none;
-                        &:hover { background: white; color: black; }
+                    .TitleList, .TextList { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em;
                     }
-                        .TitleList, .TextList { display: block; margin: 0; padding: 0; font-size: 1em; line-height: 1.5em;
-                        }
-                        .TextList { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
-                        }
+                    .TextList { white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+                    }
